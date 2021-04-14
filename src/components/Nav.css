@@ -1,39 +1,90 @@
-.nav{
-    position: fixed;
-    top: 0;
-    padding: 20px;
-    width: 100%;
-    height: 30px;
-    z-index: 1;
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  background-image: linear-gradient(
+    360deg,
+    transparent,
+    rgba(37, 37, 37, 0.5),
+    #111
+  );
 
-    /* Animations */
-    transition-timing-function: ease-in;
-    transition: all 0.5s;
+  /* Animations */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }
 .nav_contents {
   display: flex;
   justify-content: space-between;
 }
 
-.nav_black{
-    background-color: black;
+.nav_black {
+  background-color: black;
 }
 
-.nav_logo{
-    position: fixed;
-    top: 10px;
-    left: 0;
-    width: 80px;
-    object-fit: contain;
-    padding-left: 20px;
-    cursor: pointer;
+.nav_logo {
+  position: fixed;
+  top: -5px;
+  left: 10px;
+  width: 125px;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
 }
 
-.nav_avatar{
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-    width: 30px;
-    height: 30px;
+.nav_logo_buttons {
+  position: fixed;
+  left: 160px;
+}
 
+.nav_logo_buttons > button {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-right: 20px;
+}
+
+.nav_logo_buttons > button:hover {
+  color: darkgray;
+  transition: all 0.2s;
+}
+
+.nav_avatar {
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 80px;
+  width: 30px;
+  height: 30px;
+  border-radius: 0.2vw;
+}
+
+.nav_avatar_buttons {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 120px;
+}
+
+.nav_avatar_buttons > button {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-right: 20px;
+}
+
+.nav_avatar_buttons > button:hover {
+  color: darkgray;
+  transition: all 0.2s;
 }

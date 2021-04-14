@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaBell, FaSearch, FaGift } from "react-icons/fa";
 import { useHistory } from "react-router";
 import "./Nav.css";
 
@@ -35,6 +36,29 @@ function Nav() {
           src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
           alt="profile avatar"
         />
+
+        <div className="nav_buttons">
+          <div className="nav_logo_buttons">
+            <button>Home</button>
+            <button>TV Shows</button>
+            <button>Movies</button>
+            <button>New &amp; Popular</button>
+            <button>My List</button>
+          </div>
+          <div className="nav_avatar_buttons">
+            <button>
+              <FaSearch size="1.25em" title="Search" />
+            </button>
+            <button>KIDS</button>
+            <button>DVD</button>
+            <button>
+              <FaGift size="1.25em" title="Referrals" />
+            </button>
+            <button>
+              <FaBell size="1.25em" title="Notifications" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
