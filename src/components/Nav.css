@@ -88,3 +88,7 @@
   color: darkgray;
   transition: all 0.2s;
 }
+
+@media (max-width: 900px) {
+
+}
